@@ -43,18 +43,18 @@ def categorize_transaction(text, model="llama3.2"):
     você é um analista de dados, trabalhando em um projeto de limpeza de dados. Seu trabalho é escolher uma categoria adequada para cada lançamento financeiro que vou te enviar.
     Todas as transações financeiras  são de uma pessoa física.
     Escolha uma dentre as seguintes categorias:
-        - Alimentação
+        - Alimentação: sempre que encontrar VAREJISTA ou ATACAREJO
         - Receitas
         - Saúde
         - Mercado
         - Educação
         - Compras
         - Construção
-        - Investimentos
+        - Investimentos: sempre que encontrar CDB
         - Transferência para terceiros 
         - Internet
         - Moradia
-        - Transporte
+        - Transporte: sempre que encontrar POSTO
 
     Escolha a categoria desse item:
     {text}
